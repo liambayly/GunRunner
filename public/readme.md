@@ -1,6 +1,3 @@
-# GunRunner
-This is the GunRunner Site designed for a customer
-
 
 Enterprise Angular Template Seed 
 Written by: Ray Bayly

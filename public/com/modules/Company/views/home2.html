@@ -1,0 +1,46 @@
+<!--Breadcrumb Directive-->
+<div class="grid-container">
+<span breadcrumb></span>
+<!--<h1>Home</h1>
+<p>Welcome to the Europa Template</p>
+<p>Hello {{ globals.currentUser.username }}</p>
+<p>Your Auth Key Is {{ globals.currentUser.authkey }}</p>
+<p><a href="#/login">Logout</a></a></p>
+<p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"><img class="img-responsive" src="lib/img/demo1.jpg" width="500" height="300" shows-message-when-hovered message="A Europa Ad for 25 Years"></div>
+        <div class="col-sm-4"><img class="img-responsive" src="lib/img/demo2.jpg" width="500" height="300" shows-message-when-hovered message="A Europa Ad for Nevada"></div>
+        <div class="col-sm-4"><img class="img-responsive" src="lib/img/demo3.jpg" width="500" height="300" shows-message-when-hovered message="A Picture of the Whole Crowd"></div>
+    </div>
+</div>
+<div class="alert alert-info"><strong>Info!!</strong> {{ message }}</div>
+</p>
+-->
+
+
+	<h1>Home</h1>
+
+
+	<p>Welcome to the Europa Template</p>
+	<p>Hello <strong>{{ globals.currentUser.username }}</strong></p>
+	<p>Your Auth Key Is <strong>{{ globals.currentUser.authkey }}</strong></p>
+	<p><a href="#/login" class="button">Logout</a>
+	</p>
+
+	<span class="warning label"><strong>Info!!</strong> {{ message }}</span>
+
+
+	<div class="grid-block wrap align-center">
+		<div class="grid-content large-4 medium-6 small-12">
+			<img src="lib/img/demo1.jpg" shows-message-when-hovered message="A Europa Ad for 25 Years">
+		</div>
+		<div class="grid-content large-4 medium-6 small-12">
+			<img src="lib/img/demo2.jpg" shows-message-when-hovered message="A Europa Ad for Nevada">
+		</div>
+		<div class="grid-content large-4 medium-6 small-12">
+			<img src="lib/img/demo3.jpg" shows-message-when-hovered message="A Picture of the Whole Crowd">
+		</div>
+	</div>
+
+</div>

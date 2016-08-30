@@ -1,0 +1,41 @@
+<div class="grid-container">
+	<!--Breadcrumb Directive-->
+	<span breadcrumb></span>
+
+	<h1>Products</h1>
+
+	<!--Custom filter input for the search box, this is tied to the model for real time search-->
+
+
+
+	<div class="card">
+		<div class="card-section light-gray">
+			<input type="text" class="" ng-model="searchProductText" placeholder="Search Products" />
+			<select class="expand" ng-model="filterProductText">
+				<option value="" selected disabled>Filter Results</option>
+				<option value="name">Name</option>
+				<option value="price">Price</option>
+				<option value="description">Description</option>
+			</select>
+		</div>
+	</div>
+
+
+	<!--Paginate Directive-->
+	<span paginate></span>
+
+	<!--Showing the Products on the page-->
+	<div class="productGrid">
+		<div class="productGrid__card" data-ng-repeat="data in dataList | filter: searchProductText | orderBy: filterProductText | pagination: curPage * pageSize | limitTo: pageSize">
+			<div class="productGrid--thumbnail"><img src="{{ data.pic }}" alt="{{ data.name }}" class="img-responsive"></div>
+					<h4 class="productGrid--h4">{{ data.name }}</h4>
+					<h5 class="productGrid--h5"><strong>{{ data.price }}</strong></h5>
+					<h6 class="productGrid--h6">{{ data.description }}</h6>
+					<a href="/product-details?itemID={{ data.id }}" class="expand button " role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Details </a>
+		</div>
+	</div>
+
+	<!--Paginate Directive-->
+	<span paginate></span>
+
+</div>

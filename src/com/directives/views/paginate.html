@@ -1,0 +1,13 @@
+<!--Start Pagination Module-->
+<div class="pagination-centered">
+    <nav ng-show="dataList.length">
+        <ul class="pagination">
+              <li class="arrow"><a href="" a-disabled="curPage <= 0" ng-click="curPage = curPage-1" >&laquo;</a></li>
+              <li ng-repeat="n in range(0,pagPageCount(dataList,pageSize))" ng-show="{checkTotalPages(n,dataList,pageSize)}" ng-class="{ current: curPage == n}">
+                    <a href="" ng-disabled="isCurrentPage(n)" ng-click="$parent.curPage = n" >{{ n+1 }}</a>
+              </li>
+              <li class="arrow"><a href="" a-disabled="curPage >= numberOfPages(dataList,pageSize) - 1" ng-click="curPage = curPage + 1">&raquo;</a></li>
+        </ul>
+    </nav>
+</div>
+<!--End the Pagination Module-->

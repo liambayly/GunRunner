@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GunRunner.IO - Online Gun Auctions</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav>
+  <div class="container"> 
+    
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html">GunRunner.IO</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shop By <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="browseguns.html">Caliber</a> </li>
+            <li><a href="browseguns.html">Make</a> </li>
+            <li><a href="browseguns.html">Model</a> </li>
+            <li><a href="browseguns.html">Year Manufactured</a> </li>
+            <li><a href="browseguns.html">Gun Type</a> </li>
+            <li class="divider"></li>
+            <li><a href="browseaccessories.html">Accessories By Category</a> </li>
+             <li><a href="browseammo.html">Ammo By Caliber</a> </li>
+             <li class="divider"></li>
+            <li><a href="browseguns.html">Browse All Guns</a> </li>
+            <li><a href="browseaccessories.html">Browse All Accessories</a> </li>
+            <li><a href="browseammo.html">Browse All Ammo</a> </li>
+            <li class="divider"></li>
+            <li><a href="ffldealers.html">Find an FFL</a> </li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right hidden-sm">
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome Ray<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="myWatchlist.html">My Watchlist</a> </li>
+            <li><a href="myAuctions.html">My Auctions</a> </li>
+            <li><a href="myAccount.html">My Account</a> </li>
+            <li class="divider"></li>
+            <li><a href="orderHistory.html">Order History</a> </li>
+            <li><a href="biddingHistory.html">Bidding History</a> </li>
+            <li class="divider"></li>
+            <li><a href="sellItem.html">Sell An Item</a> </li>
+            <li class="divider"></li>
+            <li><a data-toggle="modal" href="#logoutModal">Log Out</a> </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<!--Start the Header Breadcrumb-->
+
+<div class="container"> 
+
+      <header id="topbar" class="alt">
+
+        <div class="topbar-left">
+
+          <ol class="breadcrumb">
+
+            <li class="crumb-active">
+
+              <a href="index.html">GunRunner</a>
+
+            </li>
+
+            <li class="crumb-icon">
+
+              <a href="index.html">
+
+                <span class="glyphicon glyphicon-home"></span>
+
+              </a>
+
+            </li>
+            
+            <li class="crumb-link">
+
+              <a href="index.html">Shopping</a>
+
+            </li>
+
+            <li class="crumb-link">
+
+              <a href="browseguns.html">Guns</a>
+
+            </li>
+
+            <li class="crumb-trail">Glock Model 42 Gen 3 40 Caliber Pistol</li>
+
+          </ol>
+			
+        </div>
+
+      </header>
+</div>      
+
+<!--End Top Header BreadCrumb-->
+<div class="container">
+      <table width="100%" border="0" cellpadding="9" cellspacing="9">
+      <tbody>
+        <tr>
+          <td width="631" rowspan="10" >
+              <div id="carousel1" class="carousel slide">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel1" data-slide-to="0" class="active"> </li>
+                <li data-target="#carousel1" data-slide-to="1" class=""> </li>
+                <li data-target="#carousel1" data-slide-to="2" class=""> </li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item"> <img class="img-responsive" src="img/a3.gif" width="660" height="369" alt="thumb">
+                  <div class="carousel-caption"> This is a good side shot of the glock. </div>
+                </div>
+                <div class="item active"> <img class="img-responsive" src="img/a2.gif" width="660" height="369" alt="thumb">
+                  <div class="carousel-caption"> Glock Read Sights view. </div>
+                </div>
+                <div class="item"> <img class="img-responsive" src="img/a1.gif" width="660" height="369" alt="thumb">
+                  <div class="carousel-caption"> Side view of the glock. </div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel1" data-slide="prev"><span class="icon-prev"></span></a> 
+              <a class="right carousel-control" href="#carousel1" data-slide="next"><span class="icon-next"></span></a>
+             </div>
+          </td>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="305"><b>Current Bid:</b> $745.00 (No Reserve)</td>
+          <td width="164">High Bidder: Skippy</td>
+        </tr>
+        <tr>
+          <td><b>Quantity:</b> 1</td>
+          <td><b>Positive Feedback:</b> <a data-toggle="modal" href="#sellerReviewModal">98%</a></td>
+        </tr>
+        <tr>
+          <td><b>Time Left:</b> 1 D 21 H</td>
+          <td><b>Bids</b> 11 (<a data-toggle="modal" href="#bidHistoryModal">Bid History</a>)</td>
+        </tr>
+        <tr>
+          <td><b>Auction Start:</b> 1/12/2015</td>
+          <td><b>Auction End</b> 1/22/2015</td>
+        </tr>
+        <tr>
+          <td><b>Manufacturer:</b> Glock</td>
+          <td><b>Model:</b> 42</td>
+        </tr>
+        <tr>
+          <td><b>Caliber:</b> .40</td>
+          <td><b>Condition:</b> New</td>
+        </tr>
+        <tr>
+          <td><b>Year Manufactured:</b> 1994</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><b>Item Number:</b> E33243</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>
+          <br><br>
+          <p>
+          		<a data-toggle="modal" href="#myModal" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Bid </a>
+                <a data-toggle="modal" href="#contactModal" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact Seller </a>
+                <a data-toggle="modal" href="#watchlistModal" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Add to Watchlist </a>
+                <a href="userstore.html" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Visit Seller Store </a>
+                <a href="ffldealers.html" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Find Local FFL </a>
+          	  </p></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="3"><h3>Description:</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></td>
+        </tr>
+        <tr>
+          <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center"><table width="100%" border="0" cellspacing="8" cellpadding="8">
+            <tbody>
+            <tr>
+          <td colspan="3"><hr></td>
+        </tr>
+              <tr valign="top">
+                <td width="36%"><p><b>Shipping:</b> </p>
+                <p>Priority Mail: $25.00 , No international shipments. See Item Description.</p></td>
+                <td width="33%"><p><b>Delivery:</b> </p>
+                <p>Firearms may only be shipped to a licensed dealer (FFL Holder). Some listed items may not be legal in every state. Click here for details on how to complete your purchase within the law. </p></td>
+                <td width="31%"><p><b>Payments Methods:</b> </p>
+                <p>Visa / MasterCard, American Express, Discover, USPS Money Order, Money Order, Certified Check</p></td>
+              </tr>
+            </tbody>
+          </table></td>
+        </tr>
+        <tr>
+          <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr valign="top">
+          <td colspan="3">&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<hr>
+  <div class="container well">
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-7">
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+            <div>
+              <ul class="list-unstyled">
+                <li> <a href="myAccount.html">My Account</a> </li>
+                <li> <a href="support.html">Support</a> </li>
+                <li> <a href="contactus.html">Contact Us</a> </li>
+                <li> <a href="myWatchlist.html">Watchlist</a> </li>
+                <li> <a href="myAuctions.html">My Auctions</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4  col-xs-6">
+            <div>
+              <ul class="list-unstyled">
+                <li> <a href="ffldealers.html">FFL Dealers</a> </li>
+                <li> <a href="sellitem.html">Sell on GunRunner</a> </li>
+                <li> <a href="buyagun.html">How to Buy a Gun</a> </li>
+                <li> <a href="sellagun.html">How to Sell a Gun</a> </li>
+                <li> <a href="faq.html">FAQ</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+            <div>
+              <ul class="list-unstyled">
+                <li> <a href="browseguns.html">Browse Auctions</a> </li>
+                <li> <a href="browseammo.html">Browse Ammo</a> </li>
+                <li> <a href="browseaccessories.html">Browse Accessories</a> </li>
+                <li> <a data-toggle="modal" href="#logoutModal">Log Out</a> </li>
+                <li> <a href="news.html">News</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5"> 
+        <address>
+        <strong>GunRunner, LLC.</strong><br>
+        307 Kings Mountain St. <br>
+        Clover, SC, 29710<br>
+        <abbr title="Phone">P:</abbr> (888) 555-5555
+      </address>
+        <address>
+        <strong>Full Name</strong><br>
+        <a href="mailto:#">contact@gunrunner.io</a>
+        </address>
+        </div>
+    </div>
+  </div>
+
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © BaylySoft. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<!--Bid Modal-->
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Bid on Item</h4>
+            </div>
+            <div class="modal-body">
+                <table width="445" border="0" cellpadding="5" cellspacing="5">
+                  <tbody>
+                    <tr>
+                      <td width="241" rowspan="5"><img src="img/a1.gif" width="241" height="130" alt=""/></td>
+                      <td width="169"><b>AK-74</b></td>
+                    </tr>
+                    <tr>
+                      <td><b>Seller:</b> Ray Bayly</td>
+                    </tr>
+                    <tr>
+                      <td><b>Location:</b> Clover, SC</td>
+                    </tr>
+                    <tr>
+                      <td><b>Current Bid:</b> $568.00</td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Lorem ipsum dolor sit amet, consectetur adipisicing.Lorem ipsum dolor sit amet, consectetur adipisicing.Lorem ipsum dolor sit amet, consectetur adipisicing.Lorem ipsum dolor sit amet, consectetur adipisicing.Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                    </tr>
+                    <tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+                      <td><b>Bid Amount:</b></td>
+                      <td><input type="text" name="textfield" id="textfield" value="$569.00"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Place Bid</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Bid Modal-->
+
+<!--Contact Modal-->
+<div id="contactModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Contact Seller</h4>
+            </div>
+            <div class="modal-body">
+                <table width="445" border="0" cellpadding="5" cellspacing="5">
+                  <tbody>
+                    <tr>
+                      <td width="261"><b>Seller:</b></td>
+                      <td width="261">Skippy</td>
+                    </tr>
+                    <tr>
+                      <td width="261"><b>Item Number:</b></td>
+                      <td>E332454</td>
+                    </tr>
+                     <tr>
+                      <td width="261"><b>Item Name:</b></td>
+                      <td>Glock Model 42 Gen 3 40 Caliber Pistol</td>
+                    </tr>
+                    <tr>
+                      <td width="261">&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="261">Note:</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                      <textarea name="textarea" id="textarea" rows="8" cols="75"></textarea></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" valign="middle" align="center">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                  </tbody>
+                </table>
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Contact Seller</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Contact Modal-->
+
+<!--WatchList Modal-->
+<div id="watchlistModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Added to WatchList</h4>
+            </div>
+            <div class="modal-body">
+               <table width="100%" border="0" cellpadding="5" cellspacing="5">
+                  <tbody>
+                    <tr>
+                      <td width="261">&nbsp;</td>
+                      <td width="261">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" align="center">Item Added to Watchlist </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                  </tbody>
+                </table> 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End WatchList Modal-->
+
+<!--Bid History Modal-->
+<div id="bidHistoryModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Bid History</h4>
+            </div>
+            <div class="modal-body">
+               <table width="100%" border="0" cellpadding="3" cellspacing="3">
+                  <tbody>
+                    <tr>
+                      <td width="155">Starting Price</td>
+                      <td width="106">$456.00</td>
+                      <td width="154">06/12/2016 (2:32 AM)</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3"><hr></td>
+                    </tr>
+                    <tr>
+                      <td>Rick Johnson</td>
+                      <td>$460.00</td>
+                      <td>06/12/2016 (2:32 AM)</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3"><hr></td>
+                    </tr>
+                    <tr>
+                      <td>Skip Taylor</td>
+                      <td>$480.00</td>
+                      <td>06/12/2016 (2:32 AM)</td>
+                     </tr>
+                     <tr>
+                      <td colspan="3"><hr></td>
+                    </tr>
+                    <tr>
+                      <td>Rick Johnson</td>
+                      <td>$484.00</td>
+                      <td>06/12/2016 (2:32 AM)</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3"><hr></td>
+                    </tr>
+                    <tr>
+                      <td>Skippy T</td>
+                      <td>$490.00</td>
+                      <td>06/12/2016 (2:32 AM)</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3"><hr></td>
+                    </tr>
+                    <tr>
+                      <td>Richard Hurt</td>
+                      <td>$500.00</td>
+                      <td>06/12/2016 (2:32 AM)</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3"><hr></td>
+                    </tr>
+                    <tr>
+                      <td>Skip</td>
+                      <td>$510.00</td>
+                      <td>06/12/2016 (2:32 AM)</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3"><hr></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">
+                          <nav class="text-center">
+                            <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
+                            <ul class="pagination">
+                              <li> <a href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a> </li>
+                              <li class="active"><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li class="disabled"><a href="#">5</a></li>
+                              <li> <a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a> </li>
+                            </ul>
+                          </nav>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+</body>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Bid History Modal-->
+
+
+<!--Bid History Modal-->
+<div id="sellerReviewModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Seller Reviews</h4>
+            </div>
+            <div class="modal-body">
+                  <table width="100%" border="0" cellpadding="2" cellspacing="2">
+                  <tbody>
+                    <tr>
+                      <td width="142">Ryan A</td>
+                      <td width="32">4/5</td>
+                      <td width="573">June 12 2016</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">A+++ Great Exchange , very quick Delivery to FFL</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3"><hr></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>Bob C.</td>
+                      <td>3/5</td>
+                      <td>June 16 2016</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">A+++ Great Exchange , very quick Delivery to FFL</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3"><hr></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>Josh D.</td>
+                      <td>3/5</td>
+                      <td>June 20 2016</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">A+++ Great Exchange , very quick Delivery to FFL</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3"><hr></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">
+                          <nav class="text-center">
+                            <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
+                            <ul class="pagination">
+                              <li> <a href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a> </li>
+                              <li class="active"><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li class="disabled"><a href="#">5</a></li>
+                              <li> <a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a> </li>
+                            </ul>
+                          </nav>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Bid History Modal-->
+
+<!--Logout Modal-->
+<div id="logoutModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Log Out of GunRunner</h4>
+            </div>
+            <div class="modal-body">
+               <table width="100%" border="0" cellpadding="5" cellspacing="5">
+                  <tbody>
+                    <tr>
+                      <td width="261">&nbsp;</td>
+                      <td width="261">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" align="center">You are now Logged Out </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table> 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Logout Modal-->
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "vendor":"Met-RX",
+            "name": "100% ULTRAMYOSYN WHEY ISOLATE",
+            "cap1": "30g of Protein featuring Pure Premium Whey Isolate",
+            "cap2": "Only 130 Calories",
+            "cap3": "1Gram of Fat & Less than 1 Gram of Sugar",
+            "redirect":"http://www.europasports.com/redirect_link/1/",
+            "pic": "/lib/img/mocks/whey.png"
+        }
+    ]
+}

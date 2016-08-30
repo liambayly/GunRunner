@@ -1,0 +1,51 @@
+<!--Breadcrumb Directive-->
+<span breadcrumb></span>
+<h1>Products</h1>
+<p>This is the Products page</p>
+<p><a href="#/login">Logout</a></a></p>
+<p>
+
+<!--Custom filter input for the search box, this is tied to the model for real time search-->
+<p>
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" ng-model="searchProductText" placeholder="Search Products" />
+                </div>
+            </div>
+</p>
+
+<!--Custom filter input that is tied to model on the ng-repeat-->
+<p>
+<div id="custom-search-input">
+<select class="form-control" ng-model="filterProductText">
+    <option value="" selected disabled>Filter Results</option>
+    <option value="name">Name</option>
+    <option value="price">Price</option>
+    <option value="description">Description</option>
+</select>
+</div>
+</p>
+
+<!--Paginate Directive-->
+<span paginate></span>
+
+<!--Container that contains the ng-repeat for the items coming from the service-->
+<div class="container">
+	<div class="row text-center">
+        <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6" data-ng-repeat="data in dataList | filter: searchProductText | orderBy: filterProductText | pagination: curPage * pageSize | limitTo: pageSize">
+            <div class="thumbnail"><img src="{{ data.pic }}" alt="{{ data.name }}" class="img-responsive">
+            <div class="caption">
+                <h4>{{ data.name }}</h4>
+                <h5>{{ data.price }}</h5>
+                <h6>{{ data.description }}</h6>
+                <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Button </a>
+                </p>
+            </div>
+            </div>
+        </div>
+    </div><!--Row-->
+</div><!--Container-->
+</p>
+
+<!--Paginate Directive-->
+<span paginate></span>

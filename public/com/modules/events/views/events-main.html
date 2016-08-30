@@ -1,0 +1,72 @@
+<!--Breadcrumb Directive-->
+<div class="grid-container">
+    <span breadcrumb></span>
+    <h1>Events</h1>
+    <p>
+        <!--Custom filter input for the search box, this is tied to the model for real time search-->
+
+
+        <div align="center">
+            <div class="card columns">
+                <div class="card-section">
+                    <div align="left">
+                        <div class="row">
+                            <div id="custom-search-input">
+                                <div class="input-group col-md-12">
+                                    <input type="text" class="form-control input-lg" ng-model="searchEventText" placeholder="Search Events" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div id="custom-search-input">
+                                <select class="form-control" ng-model="filterEventText">
+                                    <option value="" selected disabled>Filter Results</option>
+                                    <option value="name">Name</option>
+                                    <option value="date">Date</option>
+                                    <option value="description">Description</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!--Custom filter input that is tied to model on the ng-repeat-->
+        <p>
+        </p>
+
+        <!--Paginate Directive-->
+        <span paginate></span>
+        <br>
+        <br>
+        <br>
+        <!--Showing the Products on the page-->
+
+        <div class="eventListings">
+            <div class="eventListings__card" data-ng-repeat="data in dataList | filter: searchEventText | orderBy: filterEventText | pagination: curPage * pageSize | limitTo: pageSize">
+                <div class="thumbnail"><img src="{{ data.pic }}" alt="{{ data.name }}" class="img-responsive">
+                    <hr>
+                    <div class="caption">
+                        <h4><strong>{{ data.name }}</strong></h4>
+                        <h5>{{ data.date }}</h5>
+                        <h6>{{ data.description }}</h6>
+                        <div align="center">
+                            <p><a href="/event-details?itemID={{ data.id }}" class="button" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Details </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!--Paginate Directive-->
+        <span paginate></span>
+</div>
+<!-- grid-container -->

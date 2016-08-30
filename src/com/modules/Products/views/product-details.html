@@ -1,0 +1,18 @@
+<div class="grid-container">
+<!--Breadcrumb Directive-->
+<span breadcrumb></span>
+<h1>Product Details</h1>
+<ul class="pricing-table">
+  <li class="title"><strong>{{ productDetail.name }}</strong></li>
+  <li class="price"><img src="{{productDetail.pic1}}" class="img-polaroid" alt="Lenovo Desktop">
+                    <img src="{{productDetail.pic2}}" class="img-polaroid" alt="Lenovo Desktop">
+                    <img src="{{productDetail.pic3}}" class="img-polaroid" alt="Lenovo Desktop">
+  </li>
+  <li class="description">{{ productDetail.description }}</li>
+  <li class="bullet-item">{{ productDetail.catchline }}</li>
+  <li class="bullet-item">Inclusive of all taxes. Free home delivery.</li>
+  <li class="bullet-item"><del class="text-error">{{ productDetail.wholesale }}</del> {{productDetail.price}}</li>
+    <li class="bullet-item">{{ message }}</li>
+  <li class="cta-button"><a class="large button" href="#">Buy Online Now</a></li>
+</ul>
+</div>
